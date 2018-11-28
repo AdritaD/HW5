@@ -1,0 +1,22 @@
+<h1>Add a Video</h1>
+
+<form>
+    <div>
+        <img style="float:left; padding:16px;" src="../images/{{video._id}}.jpg">
+    </div>
+    <div>
+        <label>Title</label>		
+        <input ng-model = "video.title"></input>
+    </div>
+
+
+    <div>
+        <label>Genre</label>		
+        <input ng-model = "video.genre"></input>
+    </div>
+    <div>
+        <label>Description</label>
+        <textarea ng-model = "video.desc"></textarea>
+    </div>
+    <input type="button" value="Save" ng-click = "save1()"></input>	
+</form>

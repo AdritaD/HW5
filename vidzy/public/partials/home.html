@@ -1,0 +1,24 @@
+<html>
+<head>	
+
+<script src="/javascripts/main.js" type="text/javascript"></script>
+</head>
+
+<h1>Movie-List</h1>
+
+Search term: {{ search }}
+<ul id="videolist">
+    <li ng-repeat='video in videoz'>
+    	<img style="width:100px; height:100px;" src="../images/{{video._id}}.jpg">
+
+        <a href="/#/video/{{video._id}}">
+            {{video.title}}
+        </a>
+        <a href="/#/video/delete/{{video._id}}">
+            <i class="glyphicon glyphicon-remove"></i>
+        </a>
+    </li>
+</ul>
+
+<a href="/#/add-video">Add a Video</a>
+</html>
